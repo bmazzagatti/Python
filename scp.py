@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# This scripts allows the SCP function of multiple files to multiple remote hosts, in multiple locations
+# written by Braeland Mazzagatti
+#Date written: August 8th, 2023
 
 import os
 import subprocess
