@@ -12,7 +12,7 @@
 numbers = set()
 duplicates = 0 
 
-prompt = "Enter a number (or the word 'end' to quit)"
+prompt = "Enter a number (or the word 'end' to quit): "
 while True:
     data = input(prompt)
     if data == "end":
