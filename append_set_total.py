@@ -10,17 +10,24 @@
         - the number of elements that were NOT added to the set on the second line"""
 
 numbers = set()
-duplicates = 0 
+duplicates = []
 
 prompt = "Enter a number (or the word 'end' to quit): "
 while True:
     data = input(prompt)
     if data == "end":
         break
-    elif data in numbers:
-        duplicates += 1
-    else:
-        numbers.add(data)
+    try:
+        num = float(data)
+    except ValueError:
+        print(f"'{data}'is not a valid input. Please enter a valid number: (or the word `end` to quit.) ")
+        continue
+    if isinstance(num, (int, float)):
+        if num in numbers:
+            duplicates.append(num)
+            print(f"'{num}' has already been entered.")
+        else:
+            numbers.add(num)
 
 print(numbers)
-print("{0} entries not added.".format(duplicates))
+print(f"{len(duplicates)} duplicate(s) not added: {duplicates}")

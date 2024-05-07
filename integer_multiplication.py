@@ -13,3 +13,11 @@ num1 = int(input("Enter a number: "))
 num2 = int(input("Enter a number: "))
 
 print("Product is ", num1 * num2)
+
+"""The answer is, decimal point will crash because it is defined as an 'int' instead of a 'float' """
+
+# solution 
+
+num3 = float(input("\n enter a decimal point number: "))
+num4 = float(input("enter a decimal point number: "))
+print("Product is ", num3 * num4)
