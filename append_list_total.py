@@ -5,21 +5,23 @@
     * add each iteration number to a 'list' 
     * just before the program ends, print the following:
         - the contents of the list on one line
-        - the sum of the elements in the list on the second line"""
- 
+        - the sum of the elements in the list on the second line """
+
 numbers = []
         
-prompt = "Enter a number (or the word 'end' to quit)"
+prompt = "Enter a number: (or the word 'end' to quit). "
 while True:
     data = input(prompt)
     if data == "end":
         break
-    numbers.append(int(data))
+    try:
+        numbers.append(float(data))
+    except ValueError:
+        print("Invalid input. Enter a valid number: (or `end` to quit). ")
+        continue
+    numbers.append(float(data))
 
 print(numbers)
 
-total= 0
-for value in numbers:
-    total += value
-    
+total = (sum(numbers))
 print(total)
