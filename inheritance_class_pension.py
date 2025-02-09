@@ -8,8 +8,7 @@
 	- A manager's pension is defined by the number of years worked times 20% of the salary.
 - Derive Executive from Manager.
 	- An executive's pension is defined by the number of years worked times 30% of the salary."""
- 
- 
+
 class Employee:
     def __init__(self, name, salary, years):
         self.name = name
@@ -21,7 +20,7 @@ class Employee:
     
     def pension(self):
         return self.years * self.salary * 0.1
-     
+
 class Manager(Employee):
     def __init__(self, name, salary, years):
         super().__init__(name, salary, years)
@@ -42,7 +41,7 @@ def main():
         Executive("Susan", 100000, 10),
         Employee("Michael", 100000, 10),
     ]
-    
+
     for idx, worker in enumerate(workers):
         print("{:3} {:15.2f} {}".format(idx, worker.pension(),worker.getname()))
         # {} used for field characters

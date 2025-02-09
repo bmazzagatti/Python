@@ -19,4 +19,3 @@ class Car:
     def __str__(self):
         data = [self.make, self.model, " ~ Odometer:", str(self.odometer)]
         return " ".join(data)
-        

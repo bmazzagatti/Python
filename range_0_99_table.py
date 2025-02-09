@@ -9,7 +9,7 @@ Use a 'range' to loop through and print each number from 0 to 49 to produce the 
             30 31 32 33 34 35 36 37 38 39
             40 41 42 43 44 45 46 47 48 49
 """
- 
+
 for val in range(100):
     print(" ", end ="")
     if val < 10:

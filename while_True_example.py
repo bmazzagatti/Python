@@ -2,5 +2,5 @@
 
 while True:
     print("Still in the loop.")
-    if input("Enter END to finish. ") == "END":
+    if input("Enter END to finish. ") == "END" or "end":
         break
