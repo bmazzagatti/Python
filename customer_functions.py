@@ -9,7 +9,7 @@ def get_customers():
 
 def get_info(customers):
     print("Nested Structure:", type(customers),
-          type(customers[0]), type(customers[0][0]))
+            type(customers[0]), type(customers[0][0]))
     # partial contents of customers
     print(customers[0], customers[1], sep="\n", end="\n\n")
 

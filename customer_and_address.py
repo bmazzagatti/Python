@@ -8,7 +8,7 @@ class Address:
 
     def __str__(self):
         return "".join([self.street, "\n", self.city, ", ", self.state, " ",
-                       self.zip])
+                        self.zip])
 
 
 class Customer:
@@ -19,4 +19,4 @@ class Customer:
 
     def __str__(self):
         return "".join([self.first_name, " ", self.last_name, "\n",
-                       str(self.address)])
+                        str(self.address)])

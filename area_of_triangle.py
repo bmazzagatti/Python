@@ -12,4 +12,5 @@ base = float(input("Enter the base of a triangle: "))
 height = float(input("Enter the height of a triangle: "))
 #       'float' instead of 'int' makes it possible to accept decimal points instead of ONLY whole numbers.
 area = (base * height) / 2
-print("With a base of '{0}', and a height of '{1}', the area of this triangle is '{2}'".format(base, height, area))
+#print("With a base of '{0}', and a height of '{1}', the area of this triangle is '{2}'".format(base, height, area))
+print(f"With a base of '{base}', and a height of '{height}', the area of this triangle is '{area}'")

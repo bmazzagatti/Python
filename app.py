@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-import reusable  # import statement, looks for a file called reusable.py  anywherer in the Python library path
+import reusable  # import statement, looks for a file called "reusable.py" anywhere in the Python library path
 
 def main():
-        print(reusable.square(5), reusable.cube(5))   # calls the square/cube functions from the reusable module 
+        print(reusable.square(2), reusable.cube(3))   # calls the square/cube functions from the "reusable" module 
 
 if __name__ == "__main__":
         main()

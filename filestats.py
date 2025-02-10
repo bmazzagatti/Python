@@ -14,13 +14,13 @@ def fileinfo(files):
     print(fmt.format(*pieces))
     for afile in files:
         print(fmt.format(afile, str(os.path.exists(afile)),
-                         str(os.path.isfile(afile)), str(os.path.isdir(afile)),
-                         os.path.getsize(afile), ","))
+                        str(os.path.isfile(afile)), str(os.path.isdir(afile)),
+                        os.path.getsize(afile), ","))
 
 
 def allstats(afile):
     tag = ["mode", "inode#", "device#", "#links", "user", "group", "bytes",
-           "last access", "last modified", "change/creation time"]
+            "last access", "last modified", "change/creation time"]
     print("File Stats for:", afile)
     stats = os.stat(afile)
     fmt = "{:>22} : {}"
